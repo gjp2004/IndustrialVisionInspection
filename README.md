@@ -1,5 +1,8 @@
 # 工业零件视觉检测上位机
 
+[![build-test](https://github.com/gjp2004/IndustrialVisionInspection/actions/workflows/ci.yml/badge.svg)](https://github.com/gjp2004/IndustrialVisionInspection/actions/workflows/ci.yml)
+[项目仓库](https://github.com/gjp2004/IndustrialVisionInspection)
+
 ![工业视觉检测上位机主界面](docs/assets/main-window.png)
 
 这是一个面向工业视觉检测场景的完整上位机项目。项目使用 C#、WPF、MVVM 和 OpenCvSharp，实现图像采集、视觉检测、OK/NG 判定、数据追溯和 PLC 通信模拟，可用于工程实践、技术展示和求职作品集。
