@@ -1,0 +1,76 @@
+name: Bug报告
+description: 报告可以稳定复现的软件问题
+title: "[Bug] "
+labels:
+  - bug
+body:
+  - type: markdown
+    attributes:
+      value: |
+        请勿上传真实产线IP、访问令牌、未授权产品图片或其他敏感信息。
+
+  - type: input
+    id: version
+    attributes:
+      label: 软件版本
+      placeholder: 例如 1.1.0
+    validations:
+      required: true
+
+  - type: dropdown
+    id: area
+    attributes:
+      label: 问题模块
+      options:
+        - 界面
+        - 视觉算法
+        - 相机
+        - PLC通信
+        - 数据库与历史
+        - 配方
+        - 发布与安装
+        - 其他
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: 复现步骤
+      placeholder: |
+        1. 启动程序
+        2. ...
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: 预期结果
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual
+    attributes:
+      label: 实际结果
+    validations:
+      required: true
+
+  - type: textarea
+    id: diagnostics
+    attributes:
+      label: 系统自检和日志
+      description: 请删除敏感信息后粘贴系统自检结果和相关日志。
+
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: 提交前确认
+      options:
+        - label: 我已经运行“系统自检”。
+          required: true
+        - label: 我已经搜索现有Issue，没有发现相同问题。
+          required: true
+        - label: 内容中不包含密码、令牌或生产敏感信息。
+          required: true

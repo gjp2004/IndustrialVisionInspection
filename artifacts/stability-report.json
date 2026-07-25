@@ -1,0 +1,14 @@
+{
+  "StartedAt": "2026-07-22T21:53:55.7737756+08:00",
+  "CompletedAt": "2026-07-22T22:23:55.9409077+08:00",
+  "RequestedDurationSeconds": 1800,
+  "ActualDurationSeconds": 1800.1617529,
+  "VisionCycles": 57603,
+  "PingRequests": 2880,
+  "PlcInspectionCycles": 576,
+  "DatabaseWrites": 1152,
+  "DatabaseRowsAtEnd": 1152,
+  "TotalVisionMilliseconds": 55307.46880000002,
+  "MaximumWorkingSetBytes": 80605184,
+  "Errors": []
+}
